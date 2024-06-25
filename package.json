@@ -1,0 +1,23 @@
+{
+	"name": "xxx",
+	"version": "0.0.1",
+	"description": "xx",
+	"main": "index.js",
+	"engines": {
+		"node": ">=14.18 <17"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"audit": "npm audit --registry=https://registry.npmjs.org/ --production",
+		"audit:fix": "npm audit fix --registry=https://registry.npmjs.org/ --production",
+		"lint": "eslint {src,test,config}/**/*.js",
+		"lint-fix": "eslint --fix {src,test,config}/**/*.js",
+		"format": "prettier -w {src,test,config}/**/*.js",
+		"prepare": "npx husky install"
+	},
+	"license": "GPL-3.0",
+	"dependencies": {},
+	"devDependencies": {
+		"husky": "8.0.1"
+	}
+}
