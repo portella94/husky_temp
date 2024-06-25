@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "#NPM Audit"
+npm run audit --production
+
+echo "#Tests"
+npm run test
+
+echo "#Test coverage"
+npm run coverage:details
